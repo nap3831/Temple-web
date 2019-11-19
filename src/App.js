@@ -1,5 +1,9 @@
 import React,{Component} from 'react';
 import Home from './Pages/Home';
+import Temple from './Pages/Temple';
+import TempleList from './Pages/TempleList';
+import Contact from './Pages/Contact';
+import TempleListDetail from './Pages/TempleListDetail';
 import NavigationBar from './Components/NavigationBar';
 import {BrowserRouter , Switch , Route} from 'react-router-dom';
 class App extends Component {
@@ -13,12 +17,11 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/Home" component={Home} />
-              {/* <Route path="/Product" component={Product} />
-              <Route path="/Mycart" component={Mycart} />
-              <Route path="/News" component={News} />
-              <Route path="/Promotion" component={Promotion} />
-              <Route path="/ResultsSearch" component={ResultsSearch} />
-              <Route path="/ProductDetail/:id" component={ProductDetail} /> */}
+               <Route path="/Temple" component={Temple} />
+              <Route path="/TempleList" component={TempleList} /> 
+              <Route  path="/TempleListDetail/:id" component={TempleListDetail} />
+              <Route  path="/Contact" component={Contact} />
+
             </Switch>
           </div>
         </BrowserRouter>

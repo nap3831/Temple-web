@@ -7,19 +7,12 @@ class NavigationBar extends Component {
         super(props);
         this.state = {
             isOpen: false,
-            scrolling: false,
-            isHover: false,
-            search: false,
-            isClick: false,
+
         }
         this.closeNav = this.closeNav.bind(this);
         this.toggle = this.toggle.bind(this);
     }
-    handleClickCart(){
-        this.setState({
-            isClick: !this.state.isClick
-        })
-    }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
@@ -35,25 +28,22 @@ class NavigationBar extends Component {
         return (
             <React.Fragment>
                 <div className="container">
-                    <Navbar className="text-center  alpha  fixed-top"  light expand="lg">
-                        {/* <NavLink className="navbar-brand" to="/">
-                            <img src={mainLogo} className="logo" alt="logo" />
-                        </NavLink> */}
+                    <Navbar className="text-center  alpha  fixed-top"  dark expand="lg">
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
-                            <div className="alignAutoRight">
+                            <div>
                                 <Nav navbar>
                                     <NavItem className="navbarLink">
                                         <NavLink to="/Home" onClick={this.closeNav}>หน้าหลัก</NavLink>
                                     </NavItem>
                                     <NavItem className="navbarLink">
-                                        <NavLink to="/Product" onClick={this.closeNav}>สินค้าทั้งหมด</NavLink>
+                                        <NavLink to="/Temple" onClick={this.closeNav}>ความสำคัญของวัด</NavLink>
                                     </NavItem>
                                     <NavItem className="navbarLink">
-                                        <NavLink to="/News" onClick={this.closeNav}>สินค้าใหม่</NavLink>
+                                        <NavLink to="/TempleList" onClick={this.closeNav}>รายชื่อวัด</NavLink>
                                     </NavItem>
                                     <NavItem className="navbarLink">
-                                        <NavLink to="/Promotion" onClick={this.closeNav}>สินค้าโปรโมชั่น</NavLink>
+                                        <NavLink to="/Contact" onClick={this.closeNav}>ติดต่อฉัน</NavLink>
                                     </NavItem>
                                 </Nav>
                             </div>
