@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Banner from '../Components/Banner';
 import Temple from '../assets/images/temple.jpg';
+import ReactYoutube from '../Components/ReactYoutube';
 class TemplePage extends Component {
     constructor(props) {
         super(props)
@@ -23,6 +24,9 @@ class TemplePage extends Component {
                                         &nbsp; ความสำคัญของวัด &nbsp;
                                         </span>
                                 </h3>
+                            </div>
+                            <div className="mt-5">
+                            <ReactYoutube/>
                             </div>
                             <div className="container mt-5">
                                 <div className="row">

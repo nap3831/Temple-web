@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Banner from '../Components/Banner';
 import Temple from '../assets/images/temple.jpg';
+import { NavLink } from 'react-router-dom';
 class TempleListDetail extends Component {
     constructor(props) {
         super(props)
@@ -73,7 +74,11 @@ class TempleListDetail extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <Banner images={`${Temple}`} />
+                        <div className="col-12 mt-5 p-3">
+                            <NavLink className="btn btn-success w-50" to="/TempleList">เลือกชมวัดอื่นต่อ</NavLink>
+                        </div>
                         <div className="col-12">
+
                             <div className="topMargin">
                                 <h3>
                                     <span style={{ border: '2px solid orange', borderRadius: '2%' }}>
@@ -90,7 +95,7 @@ class TempleListDetail extends Component {
                             {Data[Data_current].img.map((listImg, i) => {
                                 return (
                                     <div className="col-md-4" key={i}>
-                                        <img className="img-responsive" src={listImg} alt="photo" width="100%" height="250px" alt={`phpto ${i}`}/>
+                                        <img className="img-responsive" src={listImg}  width="100%" height="250px" alt="photo img"/>
                                     </div>
                                 )
                             })
