@@ -40,13 +40,13 @@ class TemplePage extends Component {
                                   </li>
                                         </ul>
                                     </div>
-                                    <div className="col-4 mb-5">
+                                    <div className="col-md-4 mb-5">
                                         <img className="img-responsive" style={{borderRadius:'2%'}} src="https://images.pexels.com/photos/1911580/pexels-photo-1911580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img-temple" width="100%"/>
                                     </div>
-                                    <div className="col-4 mb-5">
+                                    <div className="col-md-4 mb-5">
                                         <img className="img-responsive" style={{borderRadius:'2%'}} src="https://images.pexels.com/photos/50709/thailand-buddhists-monks-and-50709.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="img-temple" width="100%"/>
                                     </div>
-                                    <div className="col-4 mb-5">
+                                    <div className="col-md-4 mb-5">
                                         <img className="img-responsive" style={{borderRadius:'2%'}} src="https://images.pexels.com/photos/161183/thailand-monks-temple-tourism-161183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img-temple" width="100%"/>
                                     </div>
                                 </div>

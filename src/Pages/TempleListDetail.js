@@ -101,10 +101,10 @@ class TempleListDetail extends Component {
                             })
                             }
 
-                            <div className="col-12 mt-5 text-center">
+                            <div className="col-12 mt-5 text-left">
                                 <h4 className="text-warning">{Data[Data_current].title}</h4>
                                 <p className="lead">
-                                    {Data[Data_current].detail}
+                                    <span className="ml-5"></span>{Data[Data_current].detail}
                                 </p>
                             </div>
                         </div>

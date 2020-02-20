@@ -84,7 +84,10 @@
     margin-left: -50px;
     background: #fff;
   }
-
+  .size-cover{
+    width: 100%;
+    padding: 150px 0;
+  }
   .wrapper-card-img{
     position: relative; 
     /* ไม่กระโดด */
@@ -106,4 +109,17 @@
   .wrapper-card-img img:hover{
   transform: scale(1.3);
   transition: 0.5s;
+  }
+
+  @media (max-width:575.98px){
+    .topMargin h3 span{
+      font-size: 26px;
+    }
+    p,span,p.lead,div.lead{
+      font-size: 15px;
+    }
+    .topMargin {
+      margin-top: 20px;
+      text-align: center;
+  }
   }
